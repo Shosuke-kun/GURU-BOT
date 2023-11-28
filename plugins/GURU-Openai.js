@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`;
+    throw `Yoh weirdo 😡, Please provide some text or quote a message to get a response.`;
   }
 
   if (!text && m.quoted && m.quoted.text) {
@@ -12,7 +12,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 
   try {
     m.react(rwait)
-    let pingMsg = await conn.sendMessage(m.chat, { text: 'Thinking...' }, {quoted: m});
+    let pingMsg = await conn.sendMessage(m.chat, { text: 'Wait a minute iam generating a response 😄...' }, {quoted: m});
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
 
@@ -47,7 +47,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 
   } catch (error) {
     console.error('Error:', error);
-    throw `*ERROR*`;
+    throw `*Tangidzaa...*`;
   }
 };
 handler.help = ['chatgpt']
