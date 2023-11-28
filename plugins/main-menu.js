@@ -19,6 +19,9 @@ import {
   *%ucpn*
  
  乂───『 *U S E R*』───乂
+
+  • A Masterpiece By Mr Frank •
+   
  ⛥ *Name:* %name
   ⛥ *Gold:* %credit
   ⛥ *Role:* %role
